@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+body {
+  background-color: #f5f5ef;
+  margin: 0;
+}
+
+/* 상단바 */
+#logo {
+  margin-top: 20px;
+}
+
+.menu_bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 60px;
+  padding-top: 35px;
+}
+
+.addInput {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.addInput > input {
+  width: 560px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 1px solid#515bd9;
+  border-width: 5px;
+  padding-left: 20px;
+  border-radius: 50px;
+  margin-left: 50px;
+  font-size: 15px;
+}
+
+.addInput > button {
+  background-color: #515bd9;
+  color: white;
+  border-radius: 100px;
+  width: 45px;
+  height: 45px;
+  font-size: 30px;
+  margin-left: 15px;
+  border: none;
+  font-family: "Inter", sans-serif;
+}
+
+.condition {
+  background-color: #ffffff;
+  width: 450px;
+  height: 150px;
+  padding: 30px 50px;
+  border-radius: 10px;
+  border: 1px solid rgb(221, 221, 221);
+  display: flex;
+  margin: auto;
+  display: none;
+}
+
+form > input {
+  border: none;
+  background-color: #eaeaea;
+  width: 30px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+form > div {
+  margin-top: 15px;
+}
+
+form > div > input {
+  border: none;
+  background-color: #eaeaea;
+  border-radius: 5px;
+}
+
+.showRout {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+}
+
+.showRout > div {
+  width: 550px;
+  height: auto;
+  padding: 15px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.showRout > div > b {
+  font-size: 20px;
+}
+
+.edit{
+  float: right;
+  font-size: 14px;
+}
+
+.edit button{
+  border: 0px;
+  background-color: transparent;
+}

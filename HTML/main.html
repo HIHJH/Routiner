@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+    <!-- 상단바 -->
+    <nav class="menu_bar">
+        <a href="./main.html"><img src="../img/logo.png" id="logo"></a>
+        <img src="../img/notification.png" alt=""></a>
+    </nav>
+
+    <div class="addInput">
+        <input type="text" placeholder="일정을 추가해보세요" id="inputValue" oninput="inputValueChange()">
+        <button type="button" id="addToDo">+</button>
+    </div>
+    <div class="condition">
+        <form>
+           <legend><b>상세 조건</b></legend>
+           <Br>
+            요일 : 
+           <select name="date" size="1" repuired id="date">
+            <option value="Mon">월요일</option>
+            <option value="Tue">화요일</option>
+            <option value="Wed">수요일</option>
+            <option value="Thur">목요일</option>
+            <option value="Fri">금요일</option>
+            <option value="Sat">토요일</option>
+            <option value="Sun">일요일</option>
+           </select>
+           <div>
+            시작 시간 : <input type="time" id="startTime"> ~
+            종료 시간 : <input type="time" id="endTime">
+           </div>
+         이동 시간 : <input type="number" id="time"> 시간
+         <input type="number" id="minute"> 분
+        </form>
+    </div>
+
+    <div class="showRout">
+        <div class="Mon" id="Mon">
+            <b>월</b>
+            <br> <br>
+        </div>
+        <div class="Tue" id="Tue">
+            <b>화</b>
+            <br> <br>
+        </div>
+        <div class="Wed" id="Wed">
+            <b>수</b>
+            <br> <br>
+        </div>
+        <div class="Thur" id="Thur">
+            <b>목</b>
+            <br> <br>
+        </div>
+        <div class="Fri" id="Fri">
+            <b>금</b>
+            <br> <br>
+        </div>
+        <div class="Sat" id="Sat">
+            <b>토</b>
+            <br> <br>
+        </div>
+        <div class="Sun" id="Sun">
+            <b>일</b>
+            <br> <br>
+        </div>
+    </div>
+    
+    <script src="../JS/main.js"></script>
+</body>
+</html>
