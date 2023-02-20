@@ -133,12 +133,21 @@ for(var j=0; j<7; j++){
   weekDate[j].innerText = thisWeek[j+1];
 }
 
+// circle 클릭하면 view 이동하는 기능
+
 var circle = document.getElementsByClassName("circle");
 
 /*
-circle 클릭하면 view 이동하는 기능
+1. showRout의 자식 노드로 접근 & 반복문으로 구현하려 했으나 오류
 
-class명 'box'로 통일 -> box 자식 노드로 접근 & 반복문으로 구현하려 했으나 오류
+var showRout = document.getElementsByClassName("showRout");
+for(var k=0; k<7; k++){
+  circle[k].addEventListener("click", function(){
+    showRout.childNodes[k].scrollIntoView({behavior: "smooth"});
+  })
+}
+
+2. class명 'box'로 통일하여 구현하려 했으나 오류
 
 var box = document.getElementsByClassName("box");
 for(var k=0; k<7; k++){
