@@ -111,4 +111,24 @@ addToDo.addEventListener("click", function () {
   })
 });
 
+//이번주 날짜 표시
+var currentDate = new Date();
+var theYear = currentDate.getFullYear();
+var theMonth = currentDate.getMonth();
+var theDate = currentDate.getDate();
+var theDay = currentDate.getDay();
+var thisWeek = [];
 
+for(var i=1; i<8; i++) {
+  var resultDay = new Date(theYear, theMonth, theDate + (i - theDay));
+  var mm = Number(resultDay.getMonth()) + 1;
+  var dd = resultDay.getDate();
+
+  thisWeek[i] = mm + '/' + dd;
+}
+
+var weekDate = document.getElementsByClassName("weekDate");
+
+for(var j=0; j<7; j++){
+  weekDate[j].innerText = thisWeek[j+1];
+}

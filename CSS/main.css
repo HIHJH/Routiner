@@ -109,3 +109,22 @@ form > div > input {
   border: 0px;
   background-color: transparent;
 }
+
+/* 이번주 날짜 표시 */
+.circle {
+  background-color: #515bd9;
+  color:#ffffff;
+  width: 40px;
+  height: 40px;
+  padding: 15px;
+  margin-top: 50px;
+  margin-left: 2px;
+  margin-right: 2px;
+  border-radius: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.week {
+  text-align: center;
+}
