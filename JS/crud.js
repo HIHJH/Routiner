@@ -38,13 +38,12 @@ addToDo.addEventListener("click", function () {
   if (!inputBox.value) alert("내용을 입력해 주세요!");
   if (!date.value) alert("요일을 선택해주세요!");
   if (!startTime.value || !endTime.value) alert("시간을 입력해주세요!");
+  if (startTime.value >= endTime.value) alert("종료시간은 시작시간보다 이르거나 같을 수 없습니다!");
   else {
     var toDoList = document.getElementById(`${date.value}`);
     todo.innerText = inputBox.value;
     scheduled_time.innerText = `예정 시간 : ${startTime.value} ~ ${endTime.value}`;
-    duration.innerText = `(${time.value || "0"}시간 ${
-      minute.value || "0"
-    }분 일찍 출발하세요.)`;
+    duration.innerText = `(${time.value || "0"}시간 ${minute.value || "0"}분 일찍 출발하세요.)`;
 
     toDoList.append(div);
     div.append(check_btn, todo, br, del, modify, scheduled_time, duration);
@@ -57,6 +56,10 @@ addToDo.addEventListener("click", function () {
     "click",
     () =>
       (todo.style.textDecoration = check_btn.checked ? "line-through" : "none")
+      (scheduled_time.style.textDecoration = check_btn.checked ? "line-through" : "none")
+      
+      //이동시간은 취소선이 안 그어짐
+      // (duration.style.textDecoration = check_btn.checked ? "line-through" : "none")
   );
 
   modify.addEventListener("click", () => {
