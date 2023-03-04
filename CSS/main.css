@@ -125,6 +125,13 @@ form > div > input {
   vertical-align: middle;
 }
 
+.circle:hover {
+  background-color: #ffffff;
+  color: #515bd9;
+  border: solid 1.5px;
+  border-color: #515bd9;
+}
+
 .week {
   text-align: center;
 }
